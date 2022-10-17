@@ -12,3 +12,7 @@
   ```sh
   mvn clean compile exec:java@HomeworkHamsterGameApp
   ```
+  
+  In the presence section, the goal is to learn how to effectively read and utilize APIs
+  
+  In the homework section, the goal is to learn how to analyze a programm's behavior and to understand foreign code.
