@@ -40,13 +40,13 @@ public final class mysterioushamster {
     void doSomething3(){
         hamster.turnLeft();
         hamster.turnLeft();
-        hamster.turnLeft();
     }
 
     /**
      * Please describe this method here.
      */
     void doSomething4(){
+        hamster.turnLeft();
         hamster.turnLeft();
         hamster.turnLeft();
     }
