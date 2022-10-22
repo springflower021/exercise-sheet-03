@@ -1,4 +1,4 @@
-# Exercise sheet 3
+# Exercise sheet 03
 
 This repository contains all projects for exercise sheet 3. 
 In the presence section you will learn how to read and utilize APIs and how to create them.
