@@ -1,5 +1,10 @@
 # Exercise sheet 3
 
+This repository contains all projects for exercise sheet 3. 
+In the presence section you will learn how to read and utilize APIs and how to create them.
+In the homework section you will learn how to analyze a programm's behavior to understand foreign code, 
+as well as why proper documentation of code is important.
+
 ## Run the project
 - Open and run in Eclipse
 - Open and run in IntelliJ
@@ -13,6 +18,3 @@
   mvn clean compile exec:java@HomeworkHamsterGameApp
   ```
   
-  In the presence section, the goal is to learn how to effectively read and utilize APIs
-  
-  In the homework section, the goal is to learn how to analyze a programm's behavior and to understand foreign code.

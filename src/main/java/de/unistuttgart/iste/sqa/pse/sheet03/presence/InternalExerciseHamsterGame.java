@@ -9,37 +9,35 @@ import javafx.application.Platform;
  */
 public abstract class InternalExerciseHamsterGame extends InspectableSimpleHamsterGame {
 
-    /**
-     * This constructor is used for loading a territory for the game and for displaying it.
-     */
-    public InternalExerciseHamsterGame() {
-        this.loadTerritoryFromResourceFile("/territories/territory.ter");
-        this.displayInNewGameWindow();
-    }
+	/**
+	 * This constructor is used for loading a territory for the game and for displaying it.
+	 */
+	public InternalExerciseHamsterGame() {
+		this.loadTerritoryFromResourceFile("/territories/territory.ter");
+		this.displayInNewGameWindow();
+	}
 
+	@Override
+	protected void run() {
+		game.startGame();
+		hamsterRun();
+		challenge3();
+		game.stopGame();
+	}
 
-    @Override
-    protected void run() {
-        game.startGame();
-        hamsterRun();
-        challenge3();
-        game.stopGame();
-    }
+	/**
+	 * This method contains everything that the hamster is supposed to do.
+	 */
+	abstract void hamsterRun();
 
-    /**
-     * This method contains everything that the hamster is supposed to do.
-     */
-    abstract void hamsterRun();
+	/**
+	 * This method runs {@link #printWithJavaFX()} on the JavaFX thread.
+	 */
+	public void challenge3() {
+		Platform.runLater(() -> {
+			printWithJavaFX();
+		});
+	}
 
-    /**
-     * This method runs {@link #printWithJavaFX()} on the JavaFX thread.
-     */
-    public void challenge3() {
-        Platform.runLater(() -> {
-            printWithJavaFX();
-        });
-    }
-
-    abstract void printWithJavaFX();
-
+	abstract void printWithJavaFX();
 }

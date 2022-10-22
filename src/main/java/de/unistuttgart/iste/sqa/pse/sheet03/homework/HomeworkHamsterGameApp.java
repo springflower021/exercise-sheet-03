@@ -5,9 +5,8 @@ package de.unistuttgart.iste.sqa.pse.sheet03.homework;
  * You do not need to alter anything in this class.
  */
 public final class HomeworkHamsterGameApp {
-    public static void main(String[] args) {
-        final HomeworkHamsterGame game = new HomeworkHamsterGame();
-        game.doRun();
-    }
-
+	public static void main(String[] args) {
+		final HomeworkHamsterGame game = new HomeworkHamsterGame();
+		game.doRun();
+	}
 }
