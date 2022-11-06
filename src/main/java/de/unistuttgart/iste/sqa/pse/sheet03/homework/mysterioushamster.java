@@ -20,14 +20,15 @@ public final class mysterioushamster {
 	}
 
 	/**
-	 * Please describe this method here.
+	 * This method is used to let the mysterious hamster turn 90° left.
 	 */
 	void doSomething1() {
 		hamster.turnLeft();
 	}
 
 	/**
-	 * Please describe this method here.
+	 * This method is used to let the mysterious hamster move one step forward
+	 * and let it name the number of steps it has taken.
 	 */
 	void doSomething2() {
 		hamster.move();
@@ -36,7 +37,8 @@ public final class mysterioushamster {
 	}
 
 	/**
-	 * Please describe this method here.
+	 * This method is used to let the mysterious hamster turns 180° left.
+	 * Therefore, the mysterious hamster turns two times left with an angle of 90°.
 	 */
 	void doSomething3() {
 		hamster.turnLeft();
@@ -44,7 +46,8 @@ public final class mysterioushamster {
 	}
 
 	/**
-	 * Please describe this method here.
+	 * This method is used to let the mysterious hamster turn right.
+	 * For this purpose the mysterious hamster turns 3 times for 90° left.
 	 */
 	void doSomething4() {
 		hamster.turnLeft();
@@ -53,35 +56,38 @@ public final class mysterioushamster {
 	}
 
 	/**
-	 * Please describe this method here.
+	 * This method returns how man steps the mysterious hamster has taken.
+	 * @return stepCounter
 	 */
 	int doSomething5() {
 		return stepCounter;
 	}
 
 	/**
-	 * Please describe this method here.
+	 *This method is used to let the mysterious hamster announce how many steps it has taken.
 	 */
 	void doSomething6() {
 		hamster.write(stepCounter.toString());
 	}
 
 	/**
-	 * Please describe this method here.
+	 * This method is used to let the mysterious hamster pick a grain from the field it is standing on.
 	 */
 	void doSomething7() {
 		hamster.pickGrain();
 	}
 
 	/**
-	 * Please describe this method here.
+	 * This method is used to let the mysterious hamster announce when he finished his exercise.
 	 */
 	void doSomething8() {
 		hamster.write("I'm done! :)");
 	}
 
 	/**
-	 * Please describe this method here.
+	 * This method is used to let the mysterious hamster loose grains while it moves 2 field forward.
+	 * Therefore, the mysterious hamster moves on field. Puts all the grains in his mouth on to the field
+	 * and moves another step forward. Then the mysterious hamster will announce that it was too fast.
 	 */
 	void doSomething9() {
 		hamster.move();
