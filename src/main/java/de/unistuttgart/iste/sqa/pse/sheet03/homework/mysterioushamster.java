@@ -22,7 +22,7 @@ public final class mysterioushamster {
 	/**
 	 * This method is used to let the mysterious hamster turn 90° left.
 	 */
-	void doSomething1() {
+	void turnLeft() {
 		hamster.turnLeft();
 	}
 
@@ -30,7 +30,7 @@ public final class mysterioushamster {
 	 * This method is used to let the mysterious hamster move one step forward
 	 * and let it name the number of steps it has taken.
 	 */
-	void doSomething2() {
+	void moveAndCountStep() {
 		hamster.move();
 		stepCounter++;
 		hamster.write("I have already walked " + stepCounter + " steps.");
@@ -40,7 +40,7 @@ public final class mysterioushamster {
 	 * This method is used to let the mysterious hamster turns 180° left.
 	 * Therefore, the mysterious hamster turns two times left with an angle of 90°.
 	 */
-	void doSomething3() {
+	void turnTwoTimesLeft() {
 		hamster.turnLeft();
 		hamster.turnLeft();
 	}
@@ -49,7 +49,7 @@ public final class mysterioushamster {
 	 * This method is used to let the mysterious hamster turn right.
 	 * For this purpose the mysterious hamster turns 3 times for 90° left.
 	 */
-	void doSomething4() {
+	void turnRight() {
 		hamster.turnLeft();
 		hamster.turnLeft();
 		hamster.turnLeft();
@@ -59,28 +59,28 @@ public final class mysterioushamster {
 	 * This method returns how man steps the mysterious hamster has taken.
 	 * @return stepCounter
 	 */
-	int doSomething5() {
+	int getStepCounter() {
 		return stepCounter;
 	}
 
 	/**
 	 *This method is used to let the mysterious hamster announce how many steps it has taken.
 	 */
-	void doSomething6() {
+	void writeNumberOfTakenSteps() {
 		hamster.write(stepCounter.toString());
 	}
 
 	/**
 	 * This method is used to let the mysterious hamster pick a grain from the field it is standing on.
 	 */
-	void doSomething7() {
+	void pickGrain() {
 		hamster.pickGrain();
 	}
 
 	/**
 	 * This method is used to let the mysterious hamster announce when he finished his exercise.
 	 */
-	void doSomething8() {
+	void writeFinishMessage() {
 		hamster.write("I'm done! :)");
 	}
 
@@ -89,7 +89,7 @@ public final class mysterioushamster {
 	 * Therefore, the mysterious hamster moves on field. Puts all the grains in his mouth on to the field
 	 * and moves another step forward. Then the mysterious hamster will announce that it was too fast.
 	 */
-	void doSomething9() {
+	void moveFastAndLooseGrains() {
 		hamster.move();
 		stepCounter++;
 		boolean hadGrain = !hamster.mouthEmpty();
