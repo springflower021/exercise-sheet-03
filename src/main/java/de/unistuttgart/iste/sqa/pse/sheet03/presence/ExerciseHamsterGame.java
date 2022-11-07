@@ -22,7 +22,24 @@ public final class ExerciseHamsterGame extends InternalExerciseHamsterGame {
 
 		logAndWriteTerritoryInformation(territory);
 
+		turnRight();
+		move(3);
+		paule.pickGrain();
 
+		logAndWriteTerritoryInformation(territory);
+
+	}
+
+	private void turnRight() {
+		paule.turnLeft();
+		paule.turnLeft();
+		paule.turnLeft();
+	}
+
+	private void move(int count) {
+		for (int i = 0; i < count; i++) {
+			paule.move();
+		}
 	}
 
 	private void logAndWriteTerritoryInformation(Territory territory) {
