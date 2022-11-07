@@ -27,8 +27,8 @@ public final class MysteriousHamster {
 	}
 
 	/**
-	 * This method is used to let the mysterious hamster move one step forward
-	 * and let it name the number of steps it has taken.
+	 * Move the mysterious hamster one step forward and let mysterious hamster write the total number of steps
+	 * it has taken since the last reset of the step counter, which should happen only at the beginning of the program.
 	 */
 	void moveAndCountStep() {
 		hamster.move();
@@ -37,8 +37,7 @@ public final class MysteriousHamster {
 	}
 
 	/**
-	 * This method is used to let the mysterious hamster turns 180° left.
-	 * Therefore, the mysterious hamster turns two times left with an angle of 90°.
+	 * Turn around mysterious hamster to face the opposite direction.
 	 */
 	void turnAround() {
 		hamster.turnLeft();
@@ -46,8 +45,7 @@ public final class MysteriousHamster {
 	}
 
 	/**
-	 * This method is used to let the mysterious hamster turn right.
-	 * For this purpose the mysterious hamster turns 3 times for 90° left.
+	 * Turn mysterious hamster to the right.
 	 */
 	void turnRight() {
 		hamster.turnLeft();
@@ -56,7 +54,7 @@ public final class MysteriousHamster {
 	}
 
 	/**
-	 * This method returns how man steps the mysterious hamster has taken.
+	 * Return how man steps the mysterious hamster has taken.
 	 * @return stepCounter
 	 */
 	int getStepCounter() {
@@ -64,21 +62,21 @@ public final class MysteriousHamster {
 	}
 
 	/**
-	 *This method is used to let the mysterious hamster announce how many steps it has taken.
+	 * Let the mysterious hamster write how many steps it has taken.
 	 */
 	void writeNumberOfTakenSteps() {
 		hamster.write(stepCounter.toString());
 	}
 
 	/**
-	 * This method is used to let the mysterious hamster pick a grain from the field it is standing on.
+	 * Let the mysterious hamster pick up a grain from the field it is standing on.
 	 */
 	void pickGrain() {
 		hamster.pickGrain();
 	}
 
 	/**
-	 * This method is used to let the mysterious hamster announce when he finished his exercise.
+	 * Let the mysterious hamster write that it is done.
 	 */
 	void writeFinishMessage() {
 		hamster.write("I'm done! :)");
@@ -102,6 +100,7 @@ public final class MysteriousHamster {
 			hamster.write("Oops! I guess I was too fast there!");
 		}
 	}
+
 	/**
 	 * This method is used to grant mysterioushamster-objects access the {@link Hamster#write(String)} method.
 	 * @param text This text will be printed out in the game log.
