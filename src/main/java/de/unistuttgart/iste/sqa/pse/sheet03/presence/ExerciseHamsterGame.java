@@ -19,23 +19,40 @@ public final class ExerciseHamsterGame extends InternalExerciseHamsterGame {
 	@Override
 	protected void hamsterRun() {
 		final Territory territory = game.getTerritory();
+
+		logAndWriteTerritoryInformation(territory);
+
+
+	}
+
+	private void logAndWriteTerritoryInformation(Territory territory) {
+		logAndWriteNumberOfGrains(territory);
+		logAndWriteNumberOfHamsters(territory);
+		logAndWriteTerritorySize(territory);
+	}
+
+	private void logAndWriteNumberOfGrains(Territory territory) {
 		paule.write("Number of grains on field: " + territory.getTotalGrainCount());
 		output.append("Number of grains on field: ").append(String.valueOf(territory.getTotalGrainCount()))
 				.println();
+	}
 
+	private void logAndWriteNumberOfHamsters(Territory territory) {
 		paule.write("Number of hamsters on field: " + territory.getTotalHamsterCount());
 		output.append("Number of hamsters on field: ").append(String.valueOf(territory.getTotalHamsterCount()))
 				.println();
+	}
 
+	private void logAndWriteTerritorySize(Territory territory) {
 		Size territorySize = territory.getTerritorySize();
 		paule.write("Size of territory: "
 				+ "Columns: " + territorySize.getColumnCount()
 				+ " Rows: " + territorySize.getRowCount()
-				+ "Size: " + territorySize.getRowCount() * territorySize.getColumnCount());
+				+ " Size: " + territorySize.getRowCount() * territorySize.getColumnCount());
 		output.append("Size of territory: ")
 				.append("Columns: ").append(String.valueOf(territorySize.getColumnCount()))
 				.append(" Rows: ").append(String.valueOf(territorySize.getRowCount()))
-				.append("Size: ").append(String.valueOf(territorySize.getRowCount() * territorySize.getColumnCount()))
+				.append(" Size: ").append(String.valueOf(territorySize.getRowCount() * territorySize.getColumnCount()))
 				.println();
 	}
 
