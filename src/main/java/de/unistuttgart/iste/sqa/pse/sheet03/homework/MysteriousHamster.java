@@ -20,7 +20,7 @@ public final class MysteriousHamster {
 	}
 
 	/**
-	 * This method is used to let the mysterious hamster turn 90° left.
+	 * Turn mysterious hamster 90° to the left.
 	 */
 	void turnLeft() {
 		hamster.turnLeft();
@@ -83,9 +83,9 @@ public final class MysteriousHamster {
 	}
 
 	/**
-	 * This method is used to let the mysterious hamster loose grains while it moves 2 field forward.
-	 * Therefore, the mysterious hamster moves on field. Puts all the grains in his mouth on to the field
-	 * and moves another step forward. Then the mysterious hamster will announce that it was too fast.
+	 * This method is used to let the mysterious hamster loose all grains while it moves 2 steps forward.
+	 * Mysterious hamster moves one step, puts all the grains in his mouth on to the field
+	 * and moves another step forward. Then the mysterious hamster writes that it was too fast.
 	 */
 	void moveFastAndLooseGrains() {
 		hamster.move();
