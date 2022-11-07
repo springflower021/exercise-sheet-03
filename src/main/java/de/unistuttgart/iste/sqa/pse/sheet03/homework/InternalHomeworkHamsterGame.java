@@ -28,5 +28,5 @@ public abstract class InternalHomeworkHamsterGame extends InspectableSimpleHamst
 	 */
 	abstract void hamsterRun();
 
-	protected final mysterioushamster mysteriousPaule = new mysterioushamster(paule);
+	protected final MysteriousHamster mysteriousPaule = new MysteriousHamster(paule);
 }

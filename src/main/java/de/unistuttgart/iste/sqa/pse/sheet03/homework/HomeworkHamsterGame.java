@@ -78,9 +78,9 @@ public final class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 	}
 
 	/**
-	 * Returns the {@link mysterioushamster} mysteriousPaule.
+	 * Returns the {@link MysteriousHamster} mysteriousPaule.
 	 */
-	mysterioushamster getHamster() {
+	MysteriousHamster getHamster() {
 		return mysteriousPaule;
 	}
 }

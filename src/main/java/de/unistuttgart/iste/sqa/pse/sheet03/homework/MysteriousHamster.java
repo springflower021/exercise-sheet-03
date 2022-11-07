@@ -7,7 +7,7 @@ import de.hamstersimulator.objectsfirst.external.model.Hamster;
  * Notice that something is horribly wrong with the name of this class...
  * You do not need to alter anything in this class. Well, perhaps except for its name...
  */
-public final class mysterioushamster {
+public final class MysteriousHamster {
 	private Integer stepCounter = 0;
 	private Hamster hamster;
 
@@ -15,7 +15,7 @@ public final class mysterioushamster {
 	 * This constructor allows to access methods of a mysterous hamster on a specified hamster.
 	 * @param hamster A mysterioshamster-object will be created from this hamster.
 	 */
-	public mysterioushamster(final Hamster hamster) {
+	public MysteriousHamster(final Hamster hamster) {
 		this.hamster = hamster;
 	}
 
