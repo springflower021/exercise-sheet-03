@@ -40,7 +40,7 @@ public final class MysteriousHamster {
 	 * This method is used to let the mysterious hamster turns 180° left.
 	 * Therefore, the mysterious hamster turns two times left with an angle of 90°.
 	 */
-	void turnTwoTimesLeft() {
+	void turnAround() {
 		hamster.turnLeft();
 		hamster.turnLeft();
 	}

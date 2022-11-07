@@ -38,7 +38,7 @@ public final class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 		mysteriousPaule.write("Executing operation: moveAndCountStep()");
 		mysteriousPaule.moveAndCountStep();
 		mysteriousPaule.write("Executing operation: turnTwoTimesLeft()");
-		mysteriousPaule.turnTwoTimesLeft();
+		mysteriousPaule.turnAround();
 		mysteriousPaule.write("Executing operation: pickGrain()");
 		mysteriousPaule.pickGrain();
 		mysteriousPaule.write("Executing operation: writeNumberOfTakenSteps()");
@@ -52,13 +52,13 @@ public final class HomeworkHamsterGame extends InternalHomeworkHamsterGame {
 		mysteriousPaule.write("Executing operation: moveFastAndLooseGrains()");
 		mysteriousPaule.moveFastAndLooseGrains();
 		mysteriousPaule.write("Executing operation: turnTwoTimesLeft()");
-		mysteriousPaule.turnTwoTimesLeft();
+		mysteriousPaule.turnAround();
 		mysteriousPaule.write("Executing operation: moveAndCountStep()");
 		mysteriousPaule.moveAndCountStep();
 		mysteriousPaule.write("Executing operation: pickGrain()");
 		mysteriousPaule.pickGrain();
 		mysteriousPaule.write("Executing operation: turnTwoTimesLeft()");
-		mysteriousPaule.turnTwoTimesLeft();
+		mysteriousPaule.turnAround();
 		mysteriousPaule.write("Executing operation: moveAndCountStep()");
 		mysteriousPaule.moveAndCountStep();
 		mysteriousPaule.write("Executing operation: moveAndCountStep()");
